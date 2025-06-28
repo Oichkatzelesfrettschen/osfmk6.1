@@ -1,0 +1,142 @@
++ + pwd
++ + /usr/bin/pwd
++ 2> /dev/null
+PWD=/afs/ri/project/release/camb/mk/mk6.1_free/src
+srcdir=/afs/ri/project/release/camb/mk/mk6.1_free/src
++ + expr /afs/ri/project/release/camb/mk/mk6.1_free/src : \(.*\)/.*
+base=/afs/ri/project/release/camb/mk/mk6.1_free
++ basename /afs/ri/project/release/camb/mk/mk6.1_free/src
++ [ src != src ]
++ [ 4 -ne 4 ]
++ [ -r setup/AT386/osf1.sh ]
++ . setup/AT386/osf1.sh
++ MACHINE=i386
++ TARGET_MACHINE=AT386
++ target_machine=at386
++ CPUTYPE=I386
++ cputype=i386
++ OS_TYPE=OSF1
++ os_type=osf1
++ export MACHINE TARGET_MACHINE target_machine CPUTYPE cputype
++ PROJECT_NAME=OSC
++ project_name=osc
++ RULES_MK=osf.rules.mk
++ export PROJECT_NAME project_name RULES_MK
++ OS_PATH=/usr/bin
++ export OS_PATH
++ HOST_OBJECT_FORMAT=A_OUT
++ CMD_OBJECT_FORMAT=MACHO
++ KERNEL_OBJECT_FORMAT=MACHO
++ ARCHIVE_FORMAT=OSFARCH
++ export ARCHIVE_FORMAT
++ obj=/afs/ri/project/release/camb/mk/mk6.1_free/obj
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/obj ]
++ true
++ objdir=/afs/ri/project/release/camb/mk/mk6.1_free/obj/at386
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/obj/at386 ]
++ true
++ exp=/afs/ri/project/release/camb/mk/mk6.1_free/export
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/export ]
++ true
++ expdir=/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/export/at386/ ]
++ true
++ tools=/afs/ri/project/release/camb/mk/mk6.1_free/tools
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/tools ]
++ true
++ toolsdir=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386 ]
++ true
++ hostbindir=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin ]
++ true
++ PATH=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin::/usr/bin
++ LEXER=/afs/ri/project/release/camb/mk/mk6.1_free/src/usr/ccs/lib/ncform
++ YACCPAR=/afs/ri/project/release/camb/mk/mk6.1_free/src/usr/ccs/lib/yaccpar
++ FLEXSKEL=/afs/ri/project/release/camb/mk/mk6.1_free/src/usr/ccs/lib/flex.skel
++ export PATH LEXER YACCPAR
++ CCTYPE=ansi
++ export CCTYPE
++ CENV=-UMSG -D_BLD
++ OWNER=bin
++ GROUP=bin
++ export CENV OWNER GROUP
++ MAKESYSPATH=/afs/ri/project/release/camb/mk/mk6.1_free/src/usr/share/mk
++ EXPORTBASE=/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/
++ SOURCEBASE=/afs/ri/project/release/camb/mk/mk6.1_free/src
++ SOURCEDIR=/afs/ri/project/release/camb/mk/mk6.1_free/src
++ BACKED_SOURCEDIR=/afs/ri/project/release/camb/mk/mk6.1_free/src
++ OBJECTDIR=../obj/at386
++ export MAKESYSPATH EXPORTBASE SOURCEBASE SOURCEDIR BACKED_SOURCEDIR OBJECTDIR
++ INCDIRS=-I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include
++ LIBDIRS=-L/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/ccs/lib
++ SHLIBDIRS=-L/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/shlib
++ MACHO_SHLIBDIRS=-L/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/shlib
++ ELF_SHLIBDIRS=-L/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/lib
++ SHLIBPATH=/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/lib
++ DEF_ARFLAGS= cr
++ export INCDIRS LIBDIRS SHLIBDIRS MACHO_SHLIBDIRS ELF_SHLIBDIRS SHLIBPATH DEF_ARFLAGS
++ MACHO_SHARED_LIBRARIES=
++ ELF_SHARED_LIBRARIES=
++ ELF_GCC_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/elf/
++ MACHO_GCC_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/
++ COFF_GCC_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/coff/
++ A_OUT_GCC_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/a_out/
++ ARCHIVE_FORMAT=OSFARCH
++ TARGET_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/
++ export MACHO_SHARED_LIBRARIES ELF_SHARED_LIBRARIES
++ export ELF_GCC_EXEC_PREFIX MACHO_GCC_EXEC_PREFIX COFF_GCC_EXEC_PREFIX A_OUT_GCC_EXEC_PREFIX
++ export ARCHIVE_FORMAT TARGET_EXEC_PREFIX
++ IPC_FORMAT=untyped
++ MIGCOM=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/migcom
++ MIGCOM25=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/migcom2.5
++ MACH3_MIG_IDIR=/usr/ccs/bin/
++ MIGCOM_TYPED=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/migcom_typed
++ MIGCOM_UNTYPED=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/migcom
++ export IPC_FORMAT MIGCOM MIGCOM25 MACH3_MIG_IDIR MIGCOM_TYPED MIGCOM_UNTYPED
++ MACH3_ROOT_SERVERS_IDIR=/mach_servers/
++ MACH3_SERVERS_IDIR=/usr/sbin/
++ MACH3_MIG_IDIR=/usr/ccs/bin/
++ MACH3_CMD_IDIR=/usr/bin/
++ MACH3_LIBRARY_IDIR=/usr/ccs/lib/
++ MACH3_INCLUDE_IDIR=/usr/include/
++ export MACH3_ROOT_SERVERS_IDIR MACH3_SERVERS_IDIR MACH3_MIG_IDIR MACH3_CMD_IDIR MACH3_LIBRARY_IDIR MACH3_INCLUDE_IDIR
++ cd mach_services/lib/libsa_mach
++ make -r build_all
+mkdir ../../../../obj/at386/mach_services/lib/libsa_mach
+cd ../../../../obj/at386/mach_services/lib/libsa_mach
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/bcopy.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/exit.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/fork.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/malloc.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/printf.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/strcat.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/strcmp.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/strcpy.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/strlen.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/strncmp.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/strncpy.c
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith -c  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern ../../../../../src/mach_services/lib/libsa_mach/crt0.c
+rm -f __main.S
+cp ../../../../../src/mach_services/lib/libsa_mach/AT386/__main.s __main.S
+rm -f bzero.S
+cp ../../../../../src/mach_services/lib/libsa_mach/AT386/bzero.s bzero.S
+rm -f _setjmp.S
+cp ../../../../../src/mach_services/lib/libsa_mach/AT386/_setjmp.s _setjmp.S
+rm -f gcc.S
+cp ../../../../../src/mach_services/lib/libsa_mach/AT386/gcc.s gcc.S
+rm -f memcpy.S
+cp ../../../../../src/mach_services/lib/libsa_mach/AT386/memcpy.s memcpy.S
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern -c __main.S
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern -c bzero.S
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern -c _setjmp.S
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern -c gcc.S
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/gcc -B/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/  -pedantic -Wpointer-arith  -Di386 -D__i386__ -D_SHARED_LIBRARIES -O -MD -UMSG -D_BLD -D_ANSI_C_SOURCE  -Wall -Waggregate-return -Wcast-align -Wimplicit -Wmissing-prototypes -Wnested-externs -Wno-parentheses -Wshadow -Wstrict-prototypes -Wtraditional -Wwrite-strings -Werror   -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include -pic-extern -c memcpy.S
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/ar  cr libsa_mach.a bcopy.o exit.o fork.o malloc.o printf.o strcat.o strcmp.o strcpy.o strlen.o strncmp.o strncpy.o __main.o bzero.o _setjmp.o gcc.o memcpy.o crt0.o
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/ranlib libsa_mach.a
+rm -f bcopy.o exit.o fork.o malloc.o printf.o strcat.o strcmp.o strcpy.o strlen.o strncmp.o strncpy.o __main.o bzero.o _setjmp.o gcc.o memcpy.o crt0.o
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/ccs/lib/libsa_mach.a
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/ccs/lib/libsa_mach.a
+cp -p -R libsa_mach.a /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/ccs/lib/libsa_mach.a
+md -rm -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/lib/libsa_mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include    .
++ exit 0

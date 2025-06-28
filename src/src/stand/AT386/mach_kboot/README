@@ -1,0 +1,66 @@
+# 
+# Copyright (c) 1995, 1994, 1993, 1992, 1991, 1990  
+# Open Software Foundation, Inc. 
+#  
+# Permission to use, copy, modify, and distribute this software and 
+# its documentation for any purpose and without fee is hereby granted, 
+# provided that the above copyright notice appears in all copies and 
+# that both the copyright notice and this permission notice appear in 
+# supporting documentation, and that the name of ("OSF") or Open Software 
+# Foundation not be used in advertising or publicity pertaining to 
+# distribution of the software without specific, written prior permission. 
+#  
+# OSF DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE 
+# INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+# FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL OSF BE LIABLE FOR ANY 
+# SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES 
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN 
+# ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, ARISING 
+# OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE 
+# 
+# OSF Research Institute MK6.1 (unencumbered) 1/31/1995
+#
+
+The mach_kboot program is the second bootstrap level for a PC in order to
+extend the kernel bootstrap functionality. The primary bootstrap is limited
+in size because of the different media on which is must be written.
+
+The mach_kboot is booted in place of the kernel, will copy itself in the
+bootstrap original place (0x1000), and execute itself in place of the primary
+bootstrap. The additional functionalities are :
+
+1) Specify a bootstrap device different from the root device.
+	You can specify a bootstrap device (like a local FS, a raw disk, a
+	tape or an Ethernet board. The default is the first Ethernet board
+	the boot recognizes. Right now, only Ethernet board is supported.
+
+2) Remote bootstrap.
+	The bootstrap is able to recognize and use some Ethernet boards in
+	order to get the kernel image to bootstrap. It uses BOOTP to get the
+	kernel image name to bootstrap (as well as the root device), TFTP to
+	get the kernel image name to load in memory, and possibly ARP to
+	answer to remote machine queries.
+
+3) Multiple local file systems.
+	If you want to bootstrap from a local block device, more than one
+	file system is recognize and supported (like CDROM file system).
+	Right now, only the FFS is recognized. 
+
+4) Shell-like navigation.
+	You can also navigate in the bootstrap device directories and ask for
+	the list of all files in the current directory. Not yet implemented.
+
+5) Compressed kernel images.
+	The extended bootstrap is able to bootstrap compressed images in
+	order to reduce the network activity (and the place occupied to
+	store different images). The only format supported is gzip.
+
+6) Debugging.
+	If you boot the secondary bootstrap with -<debug_level> option, you
+	can get some information on the console in order to debug it.
+
+
+It must be created via makeboot, as a standard kernel. The generic 'build'
+command generate 'mach_kboot.X' object. To generate the bootable image, 
+the command to type is 'makeboot -T <addr> -o mach_kboot mach_kboot.X'
+where <addr> is the loading physical address (100000 for the PC).

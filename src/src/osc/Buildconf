@@ -1,0 +1,74 @@
+# Copyright (c) 1995, 1994, 1993, 1992, 1991, 1990  
+# Open Software Foundation, Inc. 
+#  
+# Permission to use, copy, modify, and distribute this software and 
+# its documentation for any purpose and without fee is hereby granted, 
+# provided that the above copyright notice appears in all copies and 
+# that both the copyright notice and this permission notice appear in 
+# supporting documentation, and that the name of ("OSF") or Open Software 
+# Foundation not be used in advertising or publicity pertaining to 
+# distribution of the software without specific, written prior permission. 
+#  
+# OSF DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE 
+# INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+# FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL OSF BE LIABLE FOR ANY 
+# SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES 
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN 
+# ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, ARISING 
+# OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE 
+# OSF Research Institute MK6.1 (unencumbered) 1/31/1995
+#
+on i386 setenv MACHINE i386
+on i386 setenv TARGET_MACHINE AT386
+on i386 setenv target_machine at386
+on i386 setenv BMERGE_DIFF dxdiff
+replace setenv OBJECTDIR ../obj/${target_machine}
+build_list /afs/ri/project/kernel/build_list 
+build_makeflags -r
+setenv PROJECT_NAME OSC
+setenv project_name osc
+setenv RULES_MK osf.rules.mk
+tools_base /afs/ri/project/kernel/build/nmk18b5/tools/${target_machine}
+object_base ${sandbox_base}/obj/${target_machine}
+source_base ${sandbox_base}/src
+export_base ${sandbox_base}/export/${target_machine}
+setenv SOURCEBASE ${source_base}
+setenv EXPORTBASE ${export_base}
+# Set the availability of shared libraries for a given
+# object format.
+replace setenv MACHO_SHARED_LIBRARIES ""
+replace setenv ELF_SHARED_LIBRARIES ""
+#
+replace setenv ELF_GCC_EXEC_PREFIX "${tools_base}/elf/"
+replace setenv MACHO_GCC_EXEC_PREFIX "${tools_base}/macho/"
+replace setenv COFF_GCC_EXEC_PREFIX "${tools_base}/coff/"
+replace setenv A_OUT_GCC_EXEC_PREFIX "${tools_base}/a_out/"
+replace setenv ARCHIVE_FORMAT OSFARCH
+replace setenv TARGET_EXEC_PREFIX ${tools_base}/hostbin/
+replace setenv SITE OSF
+replace setenv OWNER bin
+replace setenv GROUP bin
+replace setenv PROJECT_NAME OSC
+replace setenv project_name osc
+replace setenv RULES_MK osf.rules.mk
+replace setenv MAKESYSPATH ${source_base}/usr/share/mk
+replace setenv SOURCEDIR ""
+replace setenv BACKED_SOURCEDIR ${source_base}
+replace setenv INCDIRS -I${export_base}/usr/include
+replace setenv LIBDIRS -L${export_base}/usr/ccs/lib
+replace setenv SHLIBDIRS -L${export_base}/usr/shlib
+replace setenv MACHO_SHLIBDIRS -L${export_base}/usr/shlib
+replace setenv ELF_SHLIBDIRS -L${export_base}/usr/lib
+replace setenv SHLIBPATH "${export_base}/usr/lib"
+replace setenv MIGCOM ${tools_base}/hostbin/migcom
+replace setenv MIGCOM25 ${tools_base}/hostbin/migcom2.5
+replace setenv DEF_ARFLAGS cr
+replace setenv LEXER ${source_base}/usr/ccs/lib/ncform
+replace setenv YACCPAR ${source_base}/usr/ccs/lib/yaccpar
+replace setenv FLEXSKEL ${source_base}/usr/ccs/lib/flex.skel
+replace setenv MACH3_ROOT_SERVERS_IDIR  /mach_servers/
+replace setenv MACH3_SERVERS_IDIR       /usr/sbin/
+replace setenv MACH3_MIG_IDIR           /usr/ccs/bin/
+replace setenv MACH3_CMD_IDIR           /usr/bin/
+replace setenv MACH3_LIBRARY_IDIR       /usr/ccs/lib/
+replace setenv MACH3_INCLUDE_IDIR       /usr/include/

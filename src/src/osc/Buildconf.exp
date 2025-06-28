@@ -1,0 +1,43 @@
+# Copyright (c) 1995, 1994, 1993, 1992, 1991, 1990  
+# Open Software Foundation, Inc. 
+#  
+# Permission to use, copy, modify, and distribute this software and 
+# its documentation for any purpose and without fee is hereby granted, 
+# provided that the above copyright notice appears in all copies and 
+# that both the copyright notice and this permission notice appear in 
+# supporting documentation, and that the name of ("OSF") or Open Software 
+# Foundation not be used in advertising or publicity pertaining to 
+# distribution of the software without specific, written prior permission. 
+#  
+# OSF DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE 
+# INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+# FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL OSF BE LIABLE FOR ANY 
+# SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES 
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN 
+# ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, ARISING 
+# OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE 
+# OSF Research Institute MK6.1 (unencumbered) 1/31/1995
+#
+replace object_base ${sandbox_base}/obj/${target_machine}
+replace export_base ${sandbox_base}/export/${target_machine}
+replace source_base ${sandbox_base}/src
+replace setenv EXPORTBASE ${export_base}
+replace setenv SOURCEBASE ${source_base}
+replace setenv MAKESYSPATH ${source_base}/usr/share/mk:${MAKESYSPATH}
+replace setenv SOURCEDIR ${BACKED_SOURCEDIR}
+replace setenv BACKED_SOURCEDIR ${source_base}:${SOURCEDIR}
+replace setenv INCDIRS "-I${export_base}/usr/include ${INCDIRS}"
+replace setenv LIBDIRS "-L${export_base}/usr/ccs/lib ${LIBDIRS}"
+replace setenv SHLIBDIRS "-L${export_base}/usr/shlib ${SHLIBDIRS}"
+replace setenv MACHO_SHLIBDIRS "-L${export_base}/usr/shlib ${MACHO_SHLIBDIRS}"
+replace setenv ELF_SHLIBDIRS "-L${export_base}/usr/lib ${ELF_SHLIBDIRS}"
+replace setenv SHLIBPATH "${export_base}/usr/lib:${SHLIBPATH}"
+
+replace tools_base ${sandbox_base}/link/tools/${target_machine}
+
+replace setenv MIGCOM ${tools_base}/hostbin/migcom
+replace setenv TARGET_EXEC_PREFIX ${tools_base}/hostbin/
+replace setenv ELF_GCC_EXEC_PREFIX "${tools_base}/elf/"
+replace setenv MACHO_GCC_EXEC_PREFIX "${tools_base}/macho/"
+replace setenv COFF_GCC_EXEC_PREFIX "${tools_base}/coff/"
+replace setenv A_OUT_GCC_EXEC_PREFIX "${tools_base}/a_out/"

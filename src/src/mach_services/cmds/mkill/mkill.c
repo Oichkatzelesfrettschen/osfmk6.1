@@ -1,0 +1,245 @@
+/*
+ * Copyright (c) 1995, 1994, 1993, 1992, 1991, 1990  
+ * Open Software Foundation, Inc. 
+ *  
+ * Permission to use, copy, modify, and distribute this software and 
+ * its documentation for any purpose and without fee is hereby granted, 
+ * provided that the above copyright notice appears in all copies and 
+ * that both the copyright notice and this permission notice appear in 
+ * supporting documentation, and that the name of ("OSF") or Open Software 
+ * Foundation not be used in advertising or publicity pertaining to 
+ * distribution of the software without specific, written prior permission. 
+ *  
+ * OSF DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE 
+ * INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+ * FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL OSF BE LIABLE FOR ANY 
+ * SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES 
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN 
+ * ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, ARISING 
+ * OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE 
+ */
+/* 
+ * Mach Operating System
+ * Copyright (c) 1991,1990 Carnegie Mellon University
+ * All Rights Reserved.
+ * 
+ * Permission to use, copy, modify and distribute this software and its
+ * documentation is hereby granted, provided that both the copyright
+ * notice and this permission notice appear in all copies of the
+ * software, derivative works or modified versions, and any portions
+ * thereof, and that both notices appear in supporting documentation.
+ * 
+ * CARNEGIE MELLON ALLOWS FREE USE OF THIS SOFTWARE IN ITS 
+ * CONDITION.  CARNEGIE MELLON DISCLAIMS ANY LIABILITY OF ANY KIND FOR
+ * ANY DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.
+ * 
+ * Carnegie Mellon requests users of this software to return to
+ * 
+ *  Software Distribution Coordinator  or  Software.Distribution@CS.CMU.EDU
+ *  School of Computer Science
+ *  Carnegie Mellon University
+ *  Pittsburgh PA 15213-3890
+ * 
+ * any improvements or extensions that they make and grant Carnegie the
+ * rights to redistribute these changes.
+ */
+/*
+ * OSF Research Institute MK6.1 (unencumbered) 1/31/1995
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <mach.h>
+#include <mach_error.h>
+#include <servers/netname.h>
+#include <servers/machid.h>
+
+#define streql(a, b)	(strcmp((a), (b)) == 0)
+
+static mach_port_t server;
+static mach_port_t auth;
+
+enum action { Default, Kill, Stop, Continue, Abort };
+
+static void perform_action();
+
+static void
+usage()
+{
+    fprintf(stderr, "usage: mkill [-host machine] [-KILL|-STOP|-CONT|-ABORT] ids...\n");
+    exit(1);
+}
+
+main(argc, argv)
+    int argc;
+    char *argv[];
+{
+    char *hostname = "";
+    enum action action = Default;
+    mach_id_t *ids;
+    unsigned int numids;
+    kern_return_t kr;
+    int i;
+
+    for (i = 1; i < argc; i++)
+	if (streql(argv[i], "-host") && (i < argc-1))
+	    hostname = argv[++i];
+	else if ((streql(argv[i], "-K") ||
+		  streql(argv[i], "-KILL") ||
+		  streql(argv[i], "-9")) && (action == Default))
+	    action = Kill;
+	else if ((streql(argv[i], "-S") ||
+		  streql(argv[i], "-STOP") ||
+		  streql(argv[i], "-17")) && (action == Default))
+	    action = Stop;
+	else if ((streql(argv[i], "-C") ||
+		  streql(argv[i], "-CONT") ||
+		  streql(argv[i], "-19")) && (action == Default))
+	    action = Continue;
+	else if ((streql(argv[i], "-A") ||
+		  streql(argv[i], "-ABORT")) && (action == Default))
+	    action = Abort;
+	else if (streql(argv[i], "--")) {
+	    i++;
+	    break;
+	} else if (argv[i][0] == '-')
+	    usage();
+	else
+	    break;
+
+    argv += i;
+    argc -= i;
+
+    numids = argc;
+    ids = (mach_id_t *) malloc(numids * sizeof *ids);
+
+    for (i = 0; i < argc; i++)
+	ids[i] = atoi(argv[i]);
+
+    kr = netname_look_up(name_server_port, hostname, "MachID", &server);
+    if (kr != KERN_SUCCESS) {
+	fprintf(stderr, "mkill: netname_lookup_up(MachID): %s\n",
+	     mach_error_string(kr));
+	exit(1);
+    }
+
+    auth = mach_host_priv_self();
+    if (auth == MACH_PORT_NULL)
+	auth = mach_task_self();
+
+    perform_action(action, ids, numids);
+    exit(0);
+}
+
+static void
+perform_action(action, ids, numids)
+    enum action action;
+    mach_id_t *ids;
+    unsigned int numids;
+{
+    mach_type_t type;
+    unsigned int i;
+    kern_return_t kr;
+
+    for (i = 0; i < numids; i++) {
+	mach_id_t id = ids[i];
+
+	kr = machid_mach_type(server, auth, id, &type);
+	if (kr != KERN_SUCCESS) {
+	    fprintf(stderr, "mkill: machid_type: %s\n", mach_error_string(kr));
+	    exit(1);
+	}
+
+	switch (type) {
+	  case MACH_TYPE_NONE:
+	    fprintf(stderr, "mkill: bad id %u\n", id);
+	    continue;
+
+	  default:
+	  badaction:
+	    fprintf(stderr, "mkill: %u has type %s\n",
+		    ids[i], mach_type_string(type));
+	    continue;
+
+	  case MACH_TYPE_TASK:
+	    switch (action) {
+	      case Default:
+	      case Kill:
+		kr = machid_task_terminate(server, auth, id);
+		break;
+	      case Stop:
+		kr = machid_task_suspend(server, auth, id);
+		break;
+	      case Continue:
+		kr = machid_task_resume(server, auth, id);
+		break;
+	      default:
+		goto badaction;
+	    }
+	    break;
+
+	  case MACH_TYPE_THREAD:
+	    switch (action) {
+	      case Default:
+	      case Kill:
+		kr = machid_thread_terminate(server, auth, id);
+		break;
+	      case Stop:
+		kr = machid_thread_suspend(server, auth, id);
+		break;
+	      case Continue:
+		kr = machid_thread_resume(server, auth, id);
+		break;
+	      case Abort:
+		kr = machid_thread_abort(server, auth, id);
+		break;
+	      default:
+		goto badaction;
+	    }
+	    break;
+
+	  case MACH_TYPE_PROCESSOR_SET_NAME:
+	    kr = machid_mach_lookup(server, auth, id,
+				    MACH_TYPE_PROCESSOR_SET, &id);
+	    if (kr != KERN_SUCCESS) {
+		fprintf(stderr, "mkill: machid_mach_lookup: %s\n",
+		     mach_error_string(kr));
+		exit(1);
+	    }
+
+	    if (id == 0)
+		goto badaction;
+	    /* fall-through */
+
+	  case MACH_TYPE_PROCESSOR_SET:
+	    switch (action) {
+	      case Default:
+	      case Kill:
+		kr = machid_processor_set_destroy(server, auth, id);
+		break;
+	      default:
+		goto badaction;
+	    }
+	    break;
+
+	  case MACH_TYPE_PROCESSOR:
+	    switch (action) {
+	      case Default:
+	      case Stop:
+		kr = machid_processor_exit(server, auth, id);
+		break;
+	      case Continue:
+		kr = machid_processor_start(server, auth, id);
+		break;
+	      default:
+		goto badaction;
+	    }
+	    break;
+	}
+
+	if (kr != KERN_SUCCESS)
+	    fprintf(stderr, "mkill: %s %u: %s\n",
+		    mach_type_string(type), ids[i], mach_error_string(kr));
+    }
+}

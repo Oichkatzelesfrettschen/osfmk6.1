@@ -1,0 +1,1310 @@
++ + pwd
++ + /usr/bin/pwd
++ 2> /dev/null
+PWD=/afs/ri/project/release/camb/mk/mk6.1_free/src
+srcdir=/afs/ri/project/release/camb/mk/mk6.1_free/src
++ + expr /afs/ri/project/release/camb/mk/mk6.1_free/src : \(.*\)/.*
+base=/afs/ri/project/release/camb/mk/mk6.1_free
++ basename /afs/ri/project/release/camb/mk/mk6.1_free/src
++ [ src != src ]
++ [ 4 -ne 4 ]
++ [ -r setup/AT386/osf1.sh ]
++ . setup/AT386/osf1.sh
++ MACHINE=i386
++ TARGET_MACHINE=AT386
++ target_machine=at386
++ CPUTYPE=I386
++ cputype=i386
++ OS_TYPE=OSF1
++ os_type=osf1
++ export MACHINE TARGET_MACHINE target_machine CPUTYPE cputype
++ PROJECT_NAME=OSC
++ project_name=osc
++ RULES_MK=osf.rules.mk
++ export PROJECT_NAME project_name RULES_MK
++ OS_PATH=/usr/bin
++ export OS_PATH
++ HOST_OBJECT_FORMAT=A_OUT
++ CMD_OBJECT_FORMAT=MACHO
++ KERNEL_OBJECT_FORMAT=MACHO
++ ARCHIVE_FORMAT=OSFARCH
++ export ARCHIVE_FORMAT
++ obj=/afs/ri/project/release/camb/mk/mk6.1_free/obj
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/obj ]
++ true
++ objdir=/afs/ri/project/release/camb/mk/mk6.1_free/obj/at386
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/obj/at386 ]
++ true
++ exp=/afs/ri/project/release/camb/mk/mk6.1_free/export
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/export ]
++ true
++ expdir=/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/export/at386/ ]
++ true
++ tools=/afs/ri/project/release/camb/mk/mk6.1_free/tools
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/tools ]
++ true
++ toolsdir=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386 ]
++ true
++ hostbindir=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin
++ [ -d /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin ]
++ true
++ PATH=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin::/usr/bin
++ LEXER=/afs/ri/project/release/camb/mk/mk6.1_free/src/usr/ccs/lib/ncform
++ YACCPAR=/afs/ri/project/release/camb/mk/mk6.1_free/src/usr/ccs/lib/yaccpar
++ FLEXSKEL=/afs/ri/project/release/camb/mk/mk6.1_free/src/usr/ccs/lib/flex.skel
++ export PATH LEXER YACCPAR
++ CCTYPE=ansi
++ export CCTYPE
++ CENV=-UMSG -D_BLD
++ OWNER=bin
++ GROUP=bin
++ export CENV OWNER GROUP
++ MAKESYSPATH=/afs/ri/project/release/camb/mk/mk6.1_free/src/usr/share/mk
++ EXPORTBASE=/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/
++ SOURCEBASE=/afs/ri/project/release/camb/mk/mk6.1_free/src
++ SOURCEDIR=/afs/ri/project/release/camb/mk/mk6.1_free/src
++ BACKED_SOURCEDIR=/afs/ri/project/release/camb/mk/mk6.1_free/src
++ OBJECTDIR=../obj/at386
++ export MAKESYSPATH EXPORTBASE SOURCEBASE SOURCEDIR BACKED_SOURCEDIR OBJECTDIR
++ INCDIRS=-I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include
++ LIBDIRS=-L/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/ccs/lib
++ SHLIBDIRS=-L/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/shlib
++ MACHO_SHLIBDIRS=-L/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/shlib
++ ELF_SHLIBDIRS=-L/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/lib
++ SHLIBPATH=/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/lib
++ DEF_ARFLAGS= cr
++ export INCDIRS LIBDIRS SHLIBDIRS MACHO_SHLIBDIRS ELF_SHLIBDIRS SHLIBPATH DEF_ARFLAGS
++ MACHO_SHARED_LIBRARIES=
++ ELF_SHARED_LIBRARIES=
++ ELF_GCC_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/elf/
++ MACHO_GCC_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/
++ COFF_GCC_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/coff/
++ A_OUT_GCC_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/a_out/
++ ARCHIVE_FORMAT=OSFARCH
++ TARGET_EXEC_PREFIX=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/
++ export MACHO_SHARED_LIBRARIES ELF_SHARED_LIBRARIES
++ export ELF_GCC_EXEC_PREFIX MACHO_GCC_EXEC_PREFIX COFF_GCC_EXEC_PREFIX A_OUT_GCC_EXEC_PREFIX
++ export ARCHIVE_FORMAT TARGET_EXEC_PREFIX
++ IPC_FORMAT=untyped
++ MIGCOM=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/migcom
++ MIGCOM25=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/migcom2.5
++ MACH3_MIG_IDIR=/usr/ccs/bin/
++ MIGCOM_TYPED=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/migcom_typed
++ MIGCOM_UNTYPED=/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/migcom
++ export IPC_FORMAT MIGCOM MIGCOM25 MACH3_MIG_IDIR MIGCOM_TYPED MIGCOM_UNTYPED
++ MACH3_ROOT_SERVERS_IDIR=/mach_servers/
++ MACH3_SERVERS_IDIR=/usr/sbin/
++ MACH3_MIG_IDIR=/usr/ccs/bin/
++ MACH3_CMD_IDIR=/usr/bin/
++ MACH3_LIBRARY_IDIR=/usr/ccs/lib/
++ MACH3_INCLUDE_IDIR=/usr/include/
++ export MACH3_ROOT_SERVERS_IDIR MACH3_SERVERS_IDIR MACH3_MIG_IDIR MACH3_CMD_IDIR MACH3_LIBRARY_IDIR MACH3_INCLUDE_IDIR
++ cd .
++ make -r MAKEFILE_PASS=FIRST
+cd ../obj/at386
+[ /mach_kernel ]
+makepath -quiet mach_kernel/. && cd mach_kernel &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /mach_kernel/mach ]
+makepath -quiet mach/. && cd mach &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /mach_kernel/mach/machine ]
+makepath -quiet machine/. && cd machine &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f machine
+ln -s i386 machine
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/machine
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/machine
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr: created directory
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include: created directory
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/mach: created directory
+cp -p -R machine /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/machine
+[ /mach_kernel/mach/i386 ]
+makepath -quiet i386/. && cd i386 &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/boolean.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/boolean.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/mach/i386: created directory
+cp -p -R ../../../../../src/mach_kernel/mach/i386/boolean.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/boolean.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/exception.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/exception.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/exception.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/exception.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/fp_reg.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/fp_reg.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/fp_reg.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/fp_reg.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/kern_return.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/kern_return.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/kern_return.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/kern_return.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386_types.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/mach_i386_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/rpc.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/rpc.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/rpc.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/rpc.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/syscall_sw.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/syscall_sw.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/syscall_sw.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/syscall_sw.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/thread_state.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/thread_state.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/thread_state.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/thread_state.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/thread_status.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/thread_status.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/thread_status.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/thread_status.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/vm_param.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/vm_param.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/vm_param.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/vm_param.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/vm_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/vm_types.h
+cp -p -R ../../../../../src/mach_kernel/mach/i386/vm_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/vm_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386.defs
+cp -p -R ../../../../../src/mach_kernel/mach/i386/mach_i386.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach/i386 -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach/i386 -I- -I../.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../../src/mach_kernel/mach/i386/mach_i386.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386.h
+cp -p -R mach_i386.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/i386/mach_i386.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/boolean.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/boolean.h
+cp -p -R ../../../../src/mach_kernel/mach/boolean.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/boolean.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/boot_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/boot_info.h
+cp -p -R ../../../../src/mach_kernel/mach/boot_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/boot_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_types.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_types.defs
+cp -p -R ../../../../src/mach_kernel/mach/clock_types.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_types.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_types.h
+cp -p -R ../../../../src/mach_kernel/mach/clock_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/error.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/error.h
+cp -p -R ../../../../src/mach_kernel/mach/error.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/error.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exception.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exception.h
+cp -p -R ../../../../src/mach_kernel/mach/exception.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exception.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/host_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/host_info.h
+cp -p -R ../../../../src/mach_kernel/mach/host_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/host_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/kern_return.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/kern_return.h
+cp -p -R ../../../../src/mach_kernel/mach/kern_return.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/kern_return.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach.defs
+cp -p -R ../../../../src/mach_kernel/mach/mach.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_param.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_param.h
+cp -p -R ../../../../src/mach_kernel/mach/mach_param.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_param.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_traps.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_traps.h
+cp -p -R ../../../../src/mach_kernel/mach/mach_traps.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_traps.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_types.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_types.defs
+cp -p -R ../../../../src/mach_kernel/mach/mach_types.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_types.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_types.h
+cp -p -R ../../../../src/mach_kernel/mach/mach_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/machine.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/machine.h
+cp -p -R ../../../../src/mach_kernel/mach/machine.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/machine.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exc.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exc.defs
+cp -p -R ../../../../src/mach_kernel/mach/exc.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exc.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object.defs
+cp -p -R ../../../../src/mach_kernel/mach/memory_object.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object.h
+cp -p -R ../../../../src/mach_kernel/mach/memory_object.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/message.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/message.h
+cp -p -R ../../../../src/mach_kernel/mach/message.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/message.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mig_errors.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mig_errors.h
+cp -p -R ../../../../src/mach_kernel/mach/mig_errors.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mig_errors.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mig_log.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mig_log.h
+cp -p -R ../../../../src/mach_kernel/mach/mig_log.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mig_log.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/msg_type.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/msg_type.h
+cp -p -R ../../../../src/mach_kernel/mach/msg_type.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/msg_type.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/ndr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/ndr.h
+cp -p -R ../../../../src/mach_kernel/mach/ndr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/ndr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/norma_special_ports.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/norma_special_ports.h
+cp -p -R ../../../../src/mach_kernel/mach/norma_special_ports.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/norma_special_ports.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/norma_task.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/norma_task.defs
+cp -p -R ../../../../src/mach_kernel/mach/norma_task.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/norma_task.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify.defs
+cp -p -R ../../../../src/mach_kernel/mach/notify.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify.h
+cp -p -R ../../../../src/mach_kernel/mach/notify.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/policy.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/policy.h
+cp -p -R ../../../../src/mach_kernel/mach/policy.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/policy.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/port.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/port.h
+cp -p -R ../../../../src/mach_kernel/mach/port.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/port.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/processor_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/processor_info.h
+cp -p -R ../../../../src/mach_kernel/mach/processor_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/processor_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/rpc.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/rpc.h
+cp -p -R ../../../../src/mach_kernel/mach/rpc.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/rpc.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/ipc_common.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/ipc_common.h
+cp -p -R ../../../../src/mach_kernel/mach/ipc_common.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/ipc_common.h
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include					 -server /dev/null				 -user /dev/null					 -header	mach_interface.h				 ../../../../src/mach_kernel/mach/mach.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include					 -server /dev/null				 -user /dev/null					 -header /dev/null				 -sheader notify_server.h				 ../../../../src/mach_kernel/mach/notify.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include					 -server /dev/null				 -user /dev/null					 -header /dev/null				 -sheader exc_server.h				 ../../../../src/mach_kernel/mach/exc.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/std_types.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/std_types.defs
+cp -p -R ../../../../src/mach_kernel/mach/std_types.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/std_types.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/std_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/std_types.h
+cp -p -R ../../../../src/mach_kernel/mach/std_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/std_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/sync.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/sync.h
+cp -p -R ../../../../src/mach_kernel/mach/sync.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/sync.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/syscall_sw.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/syscall_sw.h
+cp -p -R ../../../../src/mach_kernel/mach/syscall_sw.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/syscall_sw.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_info.h
+cp -p -R ../../../../src/mach_kernel/mach/task_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_special_ports.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_special_ports.h
+cp -p -R ../../../../src/mach_kernel/mach/task_special_ports.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_special_ports.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_info.h
+cp -p -R ../../../../src/mach_kernel/mach/thread_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_special_ports.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_special_ports.h
+cp -p -R ../../../../src/mach_kernel/mach/thread_special_ports.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_special_ports.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_status.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_status.h
+cp -p -R ../../../../src/mach_kernel/mach/thread_status.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_status.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_switch.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_switch.h
+cp -p -R ../../../../src/mach_kernel/mach/thread_switch.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/thread_switch.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/time_value.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/time_value.h
+cp -p -R ../../../../src/mach_kernel/mach/time_value.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/time_value.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_attributes.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_attributes.h
+cp -p -R ../../../../src/mach_kernel/mach/vm_attributes.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_attributes.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_inherit.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_inherit.h
+cp -p -R ../../../../src/mach_kernel/mach/vm_inherit.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_inherit.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_param.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_param.h
+cp -p -R ../../../../src/mach_kernel/mach/vm_param.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_param.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_prot.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_prot.h
+cp -p -R ../../../../src/mach_kernel/mach/vm_prot.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_prot.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_statistics.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_statistics.h
+cp -p -R ../../../../src/mach_kernel/mach/vm_statistics.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_statistics.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_sync.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_sync.h
+cp -p -R ../../../../src/mach_kernel/mach/vm_sync.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_sync.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/events_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/events_info.h
+cp -p -R ../../../../src/mach_kernel/mach/events_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/events_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_ledger.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_ledger.h
+cp -p -R ../../../../src/mach_kernel/mach/task_ledger.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/task_ledger.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_behavior.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_behavior.h
+cp -p -R ../../../../src/mach_kernel/mach/vm_behavior.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_behavior.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_region.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_region.h
+cp -p -R ../../../../src/mach_kernel/mach/vm_region.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/vm_region.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap.defs
+cp -p -R ../../../../src/mach_kernel/mach/bootstrap.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/mach/bootstrap.defs  -server /dev/null -user /dev/null
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include					 -server /dev/null				 -user /dev/null					 -header /dev/null				 -sheader bootstrap_server.h				 ../../../../src/mach_kernel/mach/bootstrap.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock.defs
+cp -p -R ../../../../src/mach_kernel/mach/clock.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/mach/clock.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_reply.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_reply.defs
+cp -p -R ../../../../src/mach_kernel/mach/clock_reply.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_reply.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/mach/clock_reply.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_host.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_host.defs
+cp -p -R ../../../../src/mach_kernel/mach/mach_host.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_host.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/mach/mach_host.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_port.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_port.defs
+cp -p -R ../../../../src/mach_kernel/mach/mach_port.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_port.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/mach/mach_port.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object_default.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object_default.defs
+cp -p -R ../../../../src/mach_kernel/mach/memory_object_default.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object_default.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/mach/memory_object_default.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/prof_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/prof_types.h
+cp -p -R ../../../../src/mach_kernel/mach/prof_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/prof_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_norma.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_norma.defs
+cp -p -R ../../../../src/mach_kernel/mach/mach_norma.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_norma.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach -I- -I.. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/mach/mach_norma.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_interface.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_interface.h
+cp -p -R mach_interface.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_interface.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify_server.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify_server.h
+cp -p -R notify_server.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/notify_server.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exc_server.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exc_server.h
+cp -p -R exc_server.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/exc_server.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap.h
+cp -p -R bootstrap.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap_server.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap_server.h
+cp -p -R bootstrap_server.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/bootstrap_server.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock.h
+cp -p -R clock.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_reply.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_reply.h
+cp -p -R clock_reply.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/clock_reply.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_host.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_host.h
+cp -p -R mach_host.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_host.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_port.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_port.h
+cp -p -R mach_port.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_port.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object_default.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object_default.h
+cp -p -R memory_object_default.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/memory_object_default.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_norma.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_norma.h
+cp -p -R mach_norma.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/mach_norma.h
+[ /mach_kernel/mach_debug ]
+makepath -quiet mach_debug/. && cd mach_debug &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/hash_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/hash_info.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/mach_debug: created directory
+cp -p -R ../../../../src/mach_kernel/mach_debug/hash_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/hash_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/ipc_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/ipc_info.h
+cp -p -R ../../../../src/mach_kernel/mach_debug/ipc_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/ipc_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/vm_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/vm_info.h
+cp -p -R ../../../../src/mach_kernel/mach_debug/vm_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/vm_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/zone_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/zone_info.h
+cp -p -R ../../../../src/mach_kernel/mach_debug/zone_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/zone_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/page_info.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/page_info.h
+cp -p -R ../../../../src/mach_kernel/mach_debug/page_info.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/page_info.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug_types.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug_types.defs
+cp -p -R ../../../../src/mach_kernel/mach_debug/mach_debug_types.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug_types.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug_types.h
+cp -p -R ../../../../src/mach_kernel/mach_debug/mach_debug_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug.defs
+cp -p -R ../../../../src/mach_kernel/mach_debug/mach_debug.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach_debug -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/mach_debug -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/mach_debug/mach_debug.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug.h
+cp -p -R mach_debug.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_debug/mach_debug.h
+[ /mach_kernel/device ]
+makepath -quiet device/. && cd device &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_types.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/device: created directory
+cp -p -R ../../../../src/mach_kernel/device/device_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/net_status.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/net_status.h
+cp -p -R ../../../../src/mach_kernel/device/net_status.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/net_status.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/param.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/param.h
+cp -p -R ../../../../src/mach_kernel/device/param.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/param.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/tty_status.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/tty_status.h
+cp -p -R ../../../../src/mach_kernel/device/tty_status.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/tty_status.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/tape_status.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/tape_status.h
+cp -p -R ../../../../src/mach_kernel/device/tape_status.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/tape_status.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_types.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_types.defs
+cp -p -R ../../../../src/mach_kernel/device/device_types.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_types.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/test_device_status.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/test_device_status.h
+cp -p -R ../../../../src/mach_kernel/device/test_device_status.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/test_device_status.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device.defs
+cp -p -R ../../../../src/mach_kernel/device/device.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/device -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/device -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/device/device.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_reply.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_reply.defs
+cp -p -R ../../../../src/mach_kernel/device/device_reply.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_reply.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/device -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/device -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/device/device_reply.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_request.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_request.defs
+cp -p -R ../../../../src/mach_kernel/device/device_request.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_request.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/device -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_kernel/device -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/mach_kernel/device/device_request.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device.h
+cp -p -R device.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_reply.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_reply.h
+cp -p -R device_reply.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_reply.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_request.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_request.h
+cp -p -R device_request.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/device/device_request.h
+[ /mach_kernel/ddb ]
+makepath -quiet ddb/. && cd ddb &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ddb/nlist.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ddb/nlist.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/ddb: created directory
+cp -p -R ../../../../src/mach_kernel/ddb/nlist.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ddb/nlist.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ddb/stab.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ddb/stab.h
+cp -p -R ../../../../src/mach_kernel/ddb/stab.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ddb/stab.h
+[ /mach_kernel/i386 ]
+makepath -quiet i386/. && cd i386 &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/asm.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/asm.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/i386: created directory
+cp -p -R ../../../../src/mach_kernel/i386/asm.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/asm.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/exec.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/exec.h
+cp -p -R ../../../../src/mach_kernel/i386/exec.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/exec.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/ndr_def.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/ndr_def.h
+cp -p -R ../../../../src/mach_kernel/i386/ndr_def.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/ndr_def.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/disk.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/disk.h
+cp -p -R ../../../../src/mach_kernel/i386/AT386/disk.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/disk.h
+[ /mach_kernel/include ]
+makepath -quiet include/. && cd include &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /mach_kernel/include/i386 ]
+makepath -quiet i386/. && cd i386 &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /mach_kernel/include/i386/mp ]
+makepath -quiet mp/. && cd mp &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mp/boot.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mp/boot.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/mach_kernel: created directory
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/mach_kernel/i386: created directory
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/mach_kernel/i386/mp: created directory
+cp -p -R ../../../../../../src/mach_kernel/i386/AT386/mp/boot.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mp/boot.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mp/mp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mp/mp.h
+cp -p -R ../../../../../../src/mach_kernel/i386/AT386/mp/mp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mp/mp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ast.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ast.h
+cp -p -R ../../../../../src/mach_kernel/i386/ast.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ast.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ast_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ast_types.h
+cp -p -R ../../../../../src/mach_kernel/i386/ast_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ast_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/gdb_defs.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/gdb_defs.h
+cp -p -R ../../../../../src/mach_kernel/i386/gdb_defs.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/gdb_defs.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/kgdb_defs.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/kgdb_defs.h
+cp -p -R ../../../../../src/mach_kernel/i386/kgdb_defs.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/kgdb_defs.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/kgdb_setjmp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/kgdb_setjmp.h
+cp -p -R ../../../../../src/mach_kernel/i386/kgdb_setjmp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/kgdb_setjmp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/cpu_number.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/cpu_number.h
+cp -p -R ../../../../../src/mach_kernel/i386/cpu_number.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/cpu_number.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/db_machdep.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/db_machdep.h
+cp -p -R ../../../../../src/mach_kernel/i386/db_machdep.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/db_machdep.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/lock.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/lock.h
+cp -p -R ../../../../../src/mach_kernel/i386/lock.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/lock.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mach_param.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mach_param.h
+cp -p -R ../../../../../src/mach_kernel/i386/mach_param.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/mach_param.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/machine_routines.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/machine_routines.h
+cp -p -R ../../../../../src/mach_kernel/i386/machine_routines.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/machine_routines.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/machparam.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/machparam.h
+cp -p -R ../../../../../src/mach_kernel/i386/machparam.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/machparam.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ntoh.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ntoh.h
+cp -p -R ../../../../../src/mach_kernel/i386/ntoh.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/ntoh.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/pmap.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/pmap.h
+cp -p -R ../../../../../src/mach_kernel/i386/pmap.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/pmap.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/setjmp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/setjmp.h
+cp -p -R ../../../../../src/mach_kernel/i386/setjmp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/setjmp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/syscall_subr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/syscall_subr.h
+cp -p -R ../../../../../src/mach_kernel/i386/syscall_subr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/syscall_subr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/task.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/task.h
+cp -p -R ../../../../../src/mach_kernel/i386/task.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/task.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/thread.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/thread.h
+cp -p -R ../../../../../src/mach_kernel/i386/thread.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/thread.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/vm_tuning.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/vm_tuning.h
+cp -p -R ../../../../../src/mach_kernel/i386/vm_tuning.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/vm_tuning.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/xpr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/xpr.h
+cp -p -R ../../../../../src/mach_kernel/i386/xpr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/xpr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/spl.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/spl.h
+cp -p -R ../../../../../src/mach_kernel/i386/spl.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/spl.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/thread_act.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/thread_act.h
+cp -p -R ../../../../../src/mach_kernel/i386/thread_act.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/thread_act.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/eisa.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/eisa.h
+cp -p -R ../../../../../src/mach_kernel/i386/AT386/eisa.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/i386/eisa.h
+rm -f machine
+ln -s i386 machine
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/machine
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/machine
+cp -p -R machine /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//mach_kernel/machine
+[ /mach_services ]
+makepath -quiet mach_services/. && cd mach_services &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /mach_services/include ]
+makepath -quiet include/. && cd include &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /mach_services/include/servers ]
+makepath -quiet servers/. && cd servers &&  exec make MAKEFILE_PASS=FIRST  build_all  
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/include/servers -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/include/servers -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include  -server /dev/null  -user /dev/null  -header /dev/null  -sheader service_server.h  ../../../../../src/mach_services/include/servers/service.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/servers: created directory
+cp -p -R ../../../../../src/mach_services/include/servers/service.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/include/servers -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/include/servers -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../../src/mach_services/include/servers/service.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service_server.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service_server.h
+cp -p -R service_server.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service_server.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service.h
+cp -p -R service.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/service.h
+[ /mach_services/include/i386 ]
+makepath -quiet i386/. && cd i386 &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/cthreads.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/cthreads.h
+cp -p -R ../../../../../src/mach_services/include/i386/cthreads.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/cthreads.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/rthreads.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/rthreads.h
+cp -p -R ../../../../../src/mach_services/include/i386/rthreads.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/rthreads.h
+rm -f machine
+ln -s i386 machine
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cthreads.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cthreads.h
+cp -p -R ../../../../src/mach_services/include/cthreads.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cthreads.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cthread_filter.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cthread_filter.h
+cp -p -R ../../../../src/mach_services/include/cthread_filter.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cthread_filter.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/rthreads.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/rthreads.h
+cp -p -R ../../../../src/mach_services/include/rthreads.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/rthreads.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/rthread_filter.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/rthread_filter.h
+cp -p -R ../../../../src/mach_services/include/rthread_filter.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/rthread_filter.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/errorlib.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/errorlib.h
+cp -p -R ../../../../src/mach_services/include/errorlib.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/errorlib.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach.h
+cp -p -R ../../../../src/mach_services/include/mach.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_error.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_error.h
+cp -p -R ../../../../src/mach_services/include/mach_error.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_error.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_init.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_init.h
+cp -p -R ../../../../src/mach_services/include/mach_init.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_init.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mig_errors.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mig_errors.h
+cp -p -R ../../../../src/mach_services/include/mig_errors.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mig_errors.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/msg_type.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/msg_type.h
+cp -p -R ../../../../src/mach_services/include/msg_type.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/msg_type.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/port_obj.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/port_obj.h
+cp -p -R ../../../../src/mach_services/include/port_obj.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/port_obj.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/machine
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/machine
+cp -p -R machine /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/machine
+[ /mach_services/servers ]
+makepath -quiet servers/. && cd servers &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /mach_services/servers/machid ]
+makepath -quiet machid/. && cd machid &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_types.h
+cp -p -R ../../../../../src/mach_services/servers/machid/machid_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_types.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_types.defs
+cp -p -R ../../../../../src/mach_services/servers/machid/machid_types.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_types.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid.defs
+cp -p -R ../../../../../src/mach_services/servers/machid/machid.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/machid -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/machid -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../../src/mach_services/servers/machid/machid.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_debug.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_debug.defs
+cp -p -R ../../../../../src/mach_services/servers/machid/machid_debug.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_debug.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/machid -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/machid -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../../src/mach_services/servers/machid/machid_debug.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid.h
+cp -p -R machid.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_debug.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_debug.h
+cp -p -R machid_debug.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/machid_debug.h
+[ /mach_services/servers/netname ]
+makepath -quiet netname/. && cd netname &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname_defs.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname_defs.h
+cp -p -R ../../../../../src/mach_services/servers/netname/netname_defs.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname_defs.h
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netname -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netname -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include  -server /dev/null  -user /dev/null  -header /dev/null  -sheader netname_server.h  ../../../../../src/mach_services/servers/netname/netname.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname.defs
+cp -p -R ../../../../../src/mach_services/servers/netname/netname.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netname -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netname -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../../src/mach_services/servers/netname/netname.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname_server.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname_server.h
+cp -p -R netname_server.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname_server.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname.h
+cp -p -R netname.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netname.h
+md -rm -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netname -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netname -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include    .
+[ /mach_services/servers/netmem ]
+makepath -quiet netmem/. && cd netmem &&  exec make MAKEFILE_PASS=FIRST  build_all  
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netmem -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netmem -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../../src/mach_services/servers/netmem/netmem_msg.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg.defs
+cp -p -R ../../../../../src/mach_services/servers/netmem/netmem_msg.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg_reply.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg_reply.defs
+cp -p -R ../../../../../src/mach_services/servers/netmem/netmem_msg_reply.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg_reply.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netmem -I/afs/ri/project/release/camb/mk/mk6.1_free/src/mach_services/servers/netmem -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../../src/mach_services/servers/netmem/netmem_msg_reply.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg.h
+cp -p -R netmem_msg.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg_reply.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg_reply.h
+cp -p -R netmem_msg_reply.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/servers/netmem_msg_reply.h
+[ /default_pager ]
+makepath -quiet default_pager/. && cd default_pager &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /default_pager/mach ]
+makepath -quiet mach/. && cd mach &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_types.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_types.defs
+cp -p -R ../../../../src/default_pager/mach/default_pager_types.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_types.defs
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_types.h
+cp -p -R ../../../../src/default_pager/mach/default_pager_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_object.defs
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_object.defs
+cp -p -R ../../../../src/default_pager/mach/default_pager_object.defs /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_object.defs
+/afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/hostbin/mig -cpp /afs/ri/project/release/camb/mk/mk6.1_free/tools/at386/macho/cpp    -nostdinc -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/default_pager/mach -I/afs/ri/project/release/camb/mk/mk6.1_free/src/default_pager/mach -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include ../../../../src/default_pager/mach/default_pager_object.defs  -server /dev/null -user /dev/null
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_object.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_object.h
+cp -p -R default_pager_object.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach/default_pager_object.h
+md -rm -I. -I/afs/ri/project/release/camb/mk/mk6.1_free/src/default_pager -I/afs/ri/project/release/camb/mk/mk6.1_free/src/default_pager -I-  -I/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include    .
+[ /osf1_server ]
+makepath -quiet osf1_server/. && cd osf1_server &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /osf1_server/sys ]
+makepath -quiet sys/. && cd sys &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/access.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/access.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/sys: created directory
+cp -p -R ../../../../src/osf1_server/sys/access.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/access.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/elftypes.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/elftypes.h
+cp -p -R ../../../../src/osf1_server/sys/elftypes.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/elftypes.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/exec.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/exec.h
+cp -p -R ../../../../src/osf1_server/sys/exec.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/exec.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/elf.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/elf.h
+cp -p -R ../../../../src/osf1_server/sys/elf.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/elf.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/fcntl.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/fcntl.h
+cp -p -R ../../../../src/osf1_server/sys/fcntl.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/fcntl.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/file.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/file.h
+cp -p -R ../../../../src/osf1_server/sys/file.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/file.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/errno.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/errno.h
+cp -p -R ../../../../src/osf1_server/sys/errno.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/errno.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/limits.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/limits.h
+cp -p -R ../../../../src/osf1_server/sys/limits.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/limits.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/mode.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/mode.h
+cp -p -R ../../../../src/osf1_server/sys/mode.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/mode.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/seek.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/seek.h
+cp -p -R ../../../../src/osf1_server/sys/seek.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/seek.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/stat.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/stat.h
+cp -p -R ../../../../src/osf1_server/sys/stat.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/stat.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/syslimits.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/syslimits.h
+cp -p -R ../../../../src/osf1_server/sys/syslimits.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/syslimits.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/types.h
+cp -p -R ../../../../src/osf1_server/sys/types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/vmparam.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/vmparam.h
+cp -p -R ../../../../src/osf1_server/sys/vmparam.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/vmparam.h
+[ /osf1_server/i386 ]
+makepath -quiet i386/. && cd i386 &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/endian.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/endian.h
+cp -p -R ../../../../src/osf1_server/i386/endian.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/endian.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/elf.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/elf.h
+cp -p -R ../../../../src/osf1_server/i386/elf.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/elf.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/machlimits.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/machlimits.h
+cp -p -R ../../../../src/osf1_server/i386/machlimits.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/machlimits.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/types.h
+cp -p -R ../../../../src/osf1_server/i386/types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/vmparam.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/vmparam.h
+cp -p -R ../../../../src/osf1_server/i386/vmparam.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/vmparam.h
+[ /usr ]
+makepath -quiet usr/. && cd usr &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /usr/include ]
+makepath -quiet include/. && cd include &&  exec make MAKEFILE_PASS=FIRST  build_all  
+[ /usr/include/arpa ]
+makepath -quiet arpa/. && cd arpa &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/ftp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/ftp.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/arpa: created directory
+cp -p -R ../../../../../src/usr/include/arpa/ftp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/ftp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/inet.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/inet.h
+cp -p -R ../../../../../src/usr/include/arpa/inet.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/inet.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/nameser.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/nameser.h
+cp -p -R ../../../../../src/usr/include/arpa/nameser.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/nameser.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/telnet.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/telnet.h
+cp -p -R ../../../../../src/usr/include/arpa/telnet.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/telnet.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/tftp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/tftp.h
+cp -p -R ../../../../../src/usr/include/arpa/tftp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/arpa/tftp.h
+[ /usr/include/loader ]
+makepath -quiet loader/. && cd loader &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kloadsrv.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kloadsrv.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/loader: created directory
+cp -p -R ../../../../../src/usr/include/loader/kloadsrv.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kloadsrv.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kls_ipc.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kls_ipc.h
+cp -p -R ../../../../../src/usr/include/loader/kls_ipc.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kls_ipc.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kls_message.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kls_message.h
+cp -p -R ../../../../../src/usr/include/loader/kls_message.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/kls_message.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/ldr_main.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/ldr_main.h
+cp -p -R ../../../../../src/usr/include/loader/ldr_main.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/ldr_main.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/ldr_main_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/ldr_main_types.h
+cp -p -R ../../../../../src/usr/include/loader/ldr_main_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader/ldr_main_types.h
+[ /usr/include/protocols ]
+makepath -quiet protocols/. && cd protocols &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/dumprestore.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/dumprestore.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/protocols: created directory
+cp -p -R ../../../../../src/usr/include/protocols/dumprestore.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/dumprestore.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/routed.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/routed.h
+cp -p -R ../../../../../src/usr/include/protocols/routed.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/routed.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/rwhod.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/rwhod.h
+cp -p -R ../../../../../src/usr/include/protocols/rwhod.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/rwhod.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/talkd.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/talkd.h
+cp -p -R ../../../../../src/usr/include/protocols/talkd.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/talkd.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/timed.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/timed.h
+cp -p -R ../../../../../src/usr/include/protocols/timed.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protocols/timed.h
+[ /usr/include/sys ]
+makepath -quiet sys/. && cd sys &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f dir.h
+ln -s ../dirent.h dir.h
+rm -f statvfs.h
+ln -s mount.h statvfs.h
+rm -f tiuser.h
+ln -s ../tiuser.h tiuser.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/lc_core.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/lc_core.h
+cp -p -R ../../../../../src/usr/include/sys/lc_core.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/lc_core.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/localedef.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/localedef.h
+cp -p -R ../../../../../src/usr/include/sys/localedef.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/localedef.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/method.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/method.h
+cp -p -R ../../../../../src/usr/include/sys/method.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/method.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/rtld_link.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/rtld_link.h
+cp -p -R ../../../../../src/usr/include/sys/rtld_link.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/rtld_link.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/timers.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/timers.h
+cp -p -R ../../../../../src/usr/include/sys/timers.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/timers.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/dir.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/dir.h
+cp -p -R dir.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/dir.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/statvfs.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/statvfs.h
+cp -p -R statvfs.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/statvfs.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/tiuser.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/tiuser.h
+cp -p -R tiuser.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sys/tiuser.h
+[ /usr/include/tli ]
+makepath -quiet tli/. && cd tli &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/common.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/common.h
+/afs/ri/project/release/camb/mk/mk6.1_free/export/at386/usr/include/tli: created directory
+cp -p -R ../../../../../src/usr/include/tli/common.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/common.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/iostate.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/iostate.h
+cp -p -R ../../../../../src/usr/include/tli/iostate.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/iostate.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/tdbg.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/tdbg.h
+cp -p -R ../../../../../src/usr/include/tli/tdbg.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/tdbg.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/tlistate.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/tlistate.h
+cp -p -R ../../../../../src/usr/include/tli/tlistate.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tli/tlistate.h
+[ /usr/include/i386 ]
+makepath -quiet i386/. && cd i386 &&  exec make MAKEFILE_PASS=FIRST  build_all  
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/float.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/float.h
+cp -p -R ../../../../../src/usr/include/i386/float.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/float.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/float_limits.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/float_limits.h
+cp -p -R ../../../../../src/usr/include/i386/float_limits.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/float_limits.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/math.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/math.h
+cp -p -R ../../../../../src/usr/include/i386/math.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/math.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/pthread.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/pthread.h
+cp -p -R ../../../../../src/usr/include/i386/pthread.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/i386/pthread.h
+rm -f machine
+ln -s i386 machine
+rm -f elf.h
+ln -s sys/elf.h elf.h
+rm -f errno.h
+ln -s sys/errno.h errno.h
+rm -f fcntl.h
+ln -s sys/fcntl.h fcntl.h
+rm -f limits.h
+ln -s sys/limits.h limits.h
+rm -f poll.h
+ln -s sys/poll.h poll.h
+rm -f siginfo.h
+ln -s sys/siginfo.h siginfo.h
+rm -f signal.h
+ln -s sys/signal.h signal.h
+rm -f stropts.h
+ln -s sys/stropts.h stropts.h
+rm -f syscall.h
+ln -s sys/syscall.h syscall.h
+rm -f syslog.h
+ln -s sys/syslog.h syslog.h
+rm -f termio.h
+ln -s sys/termio.h termio.h
+rm -f termios.h
+ln -s sys/termios.h termios.h
+rm -f ustat.h
+ln -s sys/ustat.h ustat.h
+rm -f wait.h
+ln -s sys/wait.h wait.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/AFdefs.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/AFdefs.h
+cp -p -R ../../../../src/usr/include/AFdefs.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/AFdefs.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/acl.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/acl.h
+cp -p -R ../../../../src/usr/include/acl.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/acl.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ar.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ar.h
+cp -p -R ../../../../src/usr/include/ar.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ar.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/assert.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/assert.h
+cp -p -R ../../../../src/usr/include/assert.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/assert.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cpio.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cpio.h
+cp -p -R ../../../../src/usr/include/cpio.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/cpio.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/crypt.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/crypt.h
+cp -p -R ../../../../src/usr/include/crypt.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/crypt.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ctype.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ctype.h
+cp -p -R ../../../../src/usr/include/ctype.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ctype.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/curses.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/curses.h
+cp -p -R ../../../../src/usr/include/curses.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/curses.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/curshdr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/curshdr.h
+cp -p -R ../../../../src/usr/include/curshdr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/curshdr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dbm.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dbm.h
+cp -p -R ../../../../src/usr/include/dbm.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dbm.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dirent.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dirent.h
+cp -p -R ../../../../src/usr/include/dirent.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dirent.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/disktab.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/disktab.h
+cp -p -R ../../../../src/usr/include/disktab.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/disktab.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dlfcn.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dlfcn.h
+cp -p -R ../../../../src/usr/include/dlfcn.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dlfcn.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dumprestor.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dumprestor.h
+cp -p -R ../../../../src/usr/include/dumprestor.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/dumprestor.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/exc_handling.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/exc_handling.h
+cp -p -R ../../../../src/usr/include/exc_handling.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/exc_handling.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fatal.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fatal.h
+cp -p -R ../../../../src/usr/include/fatal.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fatal.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/float.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/float.h
+cp -p -R ../../../../src/usr/include/float.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/float.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fnmatch.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fnmatch.h
+cp -p -R ../../../../src/usr/include/fnmatch.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fnmatch.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fmtmsg.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fmtmsg.h
+cp -p -R ../../../../src/usr/include/fmtmsg.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fmtmsg.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fp.h
+cp -p -R ../../../../src/usr/include/fp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fstab.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fstab.h
+cp -p -R ../../../../src/usr/include/fstab.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fstab.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ftw.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ftw.h
+cp -p -R ../../../../src/usr/include/ftw.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ftw.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/glob.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/glob.h
+cp -p -R ../../../../src/usr/include/glob.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/glob.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/gmon.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/gmon.h
+cp -p -R ../../../../src/usr/include/gmon.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/gmon.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/grp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/grp.h
+cp -p -R ../../../../src/usr/include/grp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/grp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/iconv.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/iconv.h
+cp -p -R ../../../../src/usr/include/iconv.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/iconv.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/langinfo.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/langinfo.h
+cp -p -R ../../../../src/usr/include/langinfo.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/langinfo.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lastlog.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lastlog.h
+cp -p -R ../../../../src/usr/include/lastlog.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lastlog.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ldfcn.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ldfcn.h
+cp -p -R ../../../../src/usr/include/ldfcn.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ldfcn.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader.h
+cp -p -R ../../../../src/usr/include/loader.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/loader.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/locale.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/locale.h
+cp -p -R ../../../../src/usr/include/locale.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/locale.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_format.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_format.h
+cp -p -R ../../../../src/usr/include/mach_o_format.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_format.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_header.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_header.h
+cp -p -R ../../../../src/usr/include/mach_o_header.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_header.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_vals.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_vals.h
+cp -p -R ../../../../src/usr/include/mach_o_vals.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_vals.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/macros.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/macros.h
+cp -p -R ../../../../src/usr/include/macros.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/macros.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/malloc.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/malloc.h
+cp -p -R ../../../../src/usr/include/malloc.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/malloc.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mandatory.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mandatory.h
+cp -p -R ../../../../src/usr/include/mandatory.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mandatory.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/math.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/math.h
+cp -p -R ../../../../src/usr/include/math.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/math.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mbstr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mbstr.h
+cp -p -R ../../../../src/usr/include/mbstr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mbstr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/memory.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/memory.h
+cp -p -R ../../../../src/usr/include/memory.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/memory.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mesg.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mesg.h
+cp -p -R ../../../../src/usr/include/mesg.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mesg.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mon.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mon.h
+cp -p -R ../../../../src/usr/include/mon.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mon.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/monetary.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/monetary.h
+cp -p -R ../../../../src/usr/include/monetary.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/monetary.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mp.h
+cp -p -R ../../../../src/usr/include/mp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/msg.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/msg.h
+cp -p -R ../../../../src/usr/include/msg.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/msg.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ndbm.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ndbm.h
+cp -p -R ../../../../src/usr/include/ndbm.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ndbm.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/netdb.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/netdb.h
+cp -p -R ../../../../src/usr/include/netdb.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/netdb.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nl_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nl_types.h
+cp -p -R ../../../../src/usr/include/nl_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nl_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/getopt.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/getopt.h
+cp -p -R ../../../../src/usr/include/getopt.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/getopt.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/paths.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/paths.h
+cp -p -R ../../../../src/usr/include/paths.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/paths.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/prot.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/prot.h
+cp -p -R ../../../../src/usr/include/prot.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/prot.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protcmd.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protcmd.h
+cp -p -R ../../../../src/usr/include/protcmd.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/protcmd.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pthread.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pthread.h
+cp -p -R ../../../../src/usr/include/pthread.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pthread.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pthread_exc.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pthread_exc.h
+cp -p -R ../../../../src/usr/include/pthread_exc.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pthread_exc.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pty.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pty.h
+cp -p -R ../../../../src/usr/include/pty.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pty.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pwd.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pwd.h
+cp -p -R ../../../../src/usr/include/pwd.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/pwd.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/regex.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/regex.h
+cp -p -R ../../../../src/usr/include/regex.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/regex.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/regexp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/regexp.h
+cp -p -R ../../../../src/usr/include/regexp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/regexp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/resolv.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/resolv.h
+cp -p -R ../../../../src/usr/include/resolv.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/resolv.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/search.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/search.h
+cp -p -R ../../../../src/usr/include/search.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/search.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sgtty.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sgtty.h
+cp -p -R ../../../../src/usr/include/sgtty.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sgtty.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stab.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stab.h
+cp -p -R ../../../../src/usr/include/stab.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stab.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/standards.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/standards.h
+cp -p -R ../../../../src/usr/include/standards.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/standards.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/std_labels.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/std_labels.h
+cp -p -R ../../../../src/usr/include/std_labels.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/std_labels.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stddef.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stddef.h
+cp -p -R ../../../../src/usr/include/stddef.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stddef.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdio.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdio.h
+cp -p -R ../../../../src/usr/include/stdio.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdio.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdlib.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdlib.h
+cp -p -R ../../../../src/usr/include/stdlib.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdlib.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/string.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/string.h
+cp -p -R ../../../../src/usr/include/string.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/string.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/strings.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/strings.h
+cp -p -R ../../../../src/usr/include/strings.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/strings.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/struct.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/struct.h
+cp -p -R ../../../../src/usr/include/struct.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/struct.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sysexits.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sysexits.h
+cp -p -R ../../../../src/usr/include/sysexits.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/sysexits.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tacct.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tacct.h
+cp -p -R ../../../../src/usr/include/tacct.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tacct.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tar.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tar.h
+cp -p -R ../../../../src/usr/include/tar.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/tar.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/time.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/time.h
+cp -p -R ../../../../src/usr/include/time.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/time.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ttyent.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ttyent.h
+cp -p -R ../../../../src/usr/include/ttyent.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ttyent.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ucontext.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ucontext.h
+cp -p -R ../../../../src/usr/include/ucontext.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ucontext.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ulimit.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ulimit.h
+cp -p -R ../../../../src/usr/include/ulimit.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ulimit.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/unctrl.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/unctrl.h
+cp -p -R ../../../../src/usr/include/unctrl.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/unctrl.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/unistd.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/unistd.h
+cp -p -R ../../../../src/usr/include/unistd.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/unistd.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/utime.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/utime.h
+cp -p -R ../../../../src/usr/include/utime.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/utime.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/utmp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/utmp.h
+cp -p -R ../../../../src/usr/include/utmp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/utmp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/vfont.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/vfont.h
+cp -p -R ../../../../src/usr/include/vfont.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/vfont.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wchar.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wchar.h
+cp -p -R ../../../../src/usr/include/wchar.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wchar.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wcstr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wcstr.h
+cp -p -R ../../../../src/usr/include/wcstr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wcstr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wordexp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wordexp.h
+cp -p -R ../../../../src/usr/include/wordexp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wordexp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wstring.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wstring.h
+cp -p -R ../../../../src/usr/include/wstring.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wstring.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/a.out.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/a.out.h
+cp -p -R ../../../../src/usr/include/AT386/a.out.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/a.out.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/aouthdr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/aouthdr.h
+cp -p -R ../../../../src/usr/include/AT386/aouthdr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/aouthdr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/bsd.a.out.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/bsd.a.out.h
+cp -p -R ../../../../src/usr/include/AT386/bsd.a.out.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/bsd.a.out.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/bsd.nlist.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/bsd.nlist.h
+cp -p -R ../../../../src/usr/include/AT386/bsd.nlist.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/bsd.nlist.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/coff.a.out.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/coff.a.out.h
+cp -p -R ../../../../src/usr/include/AT386/coff.a.out.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/coff.a.out.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/coff.nlist.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/coff.nlist.h
+cp -p -R ../../../../src/usr/include/AT386/coff.nlist.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/coff.nlist.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/filehdr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/filehdr.h
+cp -p -R ../../../../src/usr/include/AT386/filehdr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/filehdr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/linenum.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/linenum.h
+cp -p -R ../../../../src/usr/include/AT386/linenum.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/linenum.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_header_md.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_header_md.h
+cp -p -R ../../../../src/usr/include/AT386/mach_o_header_md.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_header_md.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_types.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_types.h
+cp -p -R ../../../../src/usr/include/AT386/mach_o_types.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/mach_o_types.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nan.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nan.h
+cp -p -R ../../../../src/usr/include/AT386/nan.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nan.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nlist.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nlist.h
+cp -p -R ../../../../src/usr/include/AT386/nlist.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/nlist.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ranlib.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ranlib.h
+cp -p -R ../../../../src/usr/include/AT386/ranlib.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ranlib.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/reloc.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/reloc.h
+cp -p -R ../../../../src/usr/include/AT386/reloc.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/reloc.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/scnhdr.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/scnhdr.h
+cp -p -R ../../../../src/usr/include/AT386/scnhdr.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/scnhdr.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/setjmp.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/setjmp.h
+cp -p -R ../../../../src/usr/include/AT386/setjmp.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/setjmp.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdarg.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdarg.h
+cp -p -R ../../../../src/usr/include/AT386/stdarg.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stdarg.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/storclass.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/storclass.h
+cp -p -R ../../../../src/usr/include/AT386/storclass.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/storclass.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syms.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syms.h
+cp -p -R ../../../../src/usr/include/AT386/syms.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syms.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/varargs.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/varargs.h
+cp -p -R ../../../../src/usr/include/AT386/varargs.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/varargs.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/values.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/values.h
+cp -p -R ../../../../src/usr/include/AT386/values.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/values.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/va_list.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/va_list.h
+cp -p -R ../../../../src/usr/include/AT386/va_list.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/va_list.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lib_lock.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lib_lock.h
+cp -p -R ../../../../src/usr/include/lib_lock.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lib_lock.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lib_data.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lib_data.h
+cp -p -R ../../../../src/usr/include/lib_data.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/lib_data.h
+rm -f caps.e
+cp ../../../../src/usr/ccs/lib/libcurses/caps caps.e
+ed - < ../../../../src/usr/ccs/lib/libcurses/maketerm.ex
+capnames.c
+sedin
+termdef
+termdef
+term.h
+rm -f caps.e capnames.c
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/elf.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/elf.h
+cp -p -R elf.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/elf.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/errno.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/errno.h
+cp -p -R errno.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/errno.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fcntl.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fcntl.h
+cp -p -R fcntl.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/fcntl.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/limits.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/limits.h
+cp -p -R limits.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/limits.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/poll.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/poll.h
+cp -p -R poll.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/poll.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/siginfo.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/siginfo.h
+cp -p -R siginfo.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/siginfo.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/signal.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/signal.h
+cp -p -R signal.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/signal.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stropts.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stropts.h
+cp -p -R stropts.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/stropts.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syscall.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syscall.h
+cp -p -R syscall.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syscall.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syslog.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syslog.h
+cp -p -R syslog.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/syslog.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/termio.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/termio.h
+cp -p -R termio.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/termio.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/termios.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/termios.h
+cp -p -R termios.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/termios.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ustat.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ustat.h
+cp -p -R ustat.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/ustat.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wait.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wait.h
+cp -p -R wait.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/wait.h
+rm -f /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/term.h
+makepath /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/term.h
+cp -p -R term.h /afs/ri/project/release/camb/mk/mk6.1_free/export/at386//usr/include/term.h
++ exit 0

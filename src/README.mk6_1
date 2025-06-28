@@ -1,0 +1,81 @@
+
+README.mk6_1					2/01/1995
+
+Welcome to the Open Software Foundation Research Institute's
+unencumbered source distribution for the Mach 3.0 microkernel (MK).
+This release is known as "mk6.1_free" (which corresponds to OSF
+build level nmk18b5).
+
+The release notes (located under ./doc/release_notes) provide
+a more detailed description of the functionality and enhancements
+in this version of the microkernel.  This README file outlines
+the step required to build the source code.  Please note, however,
+that building is not fully supported with this source collection.
+
+The source tree contains makefiles designed to be used with
+an enhanced (and unencumbered) make command, in the context
+of the OSF Development Environment (ODE).  If you have already
+obtained a copy of ODE (version 2.2 or later), you can use
+the make command included with ODE.
+
+We have included a minimal set of host tool executables, compiled
+for an AT386 target machine running OSF/1 or an MK release.  These tools
+(located under ./tools/at386/hostbin) include: make, make depend (md),
+makepath, genpath, mig (the Mach interface generator), migcom, and config.
+Using these tools and other standard UNIX utilities (cp, sed, awk, ln,
+ar, ranlib, etc.) it is possible to build the mk6.1_free distribution.
+
+This minimal set of hostbin tools is a subset of the complete ODE
+build environment.  The mk6.1_free release does not include the
+full suite of ODE tools.  A complete environment will be available
+in source form in future releases.  (Should you wish to obtain a
+copy of ODE in advance, or upgrade to ODE version 2.3.4, you may
+contact "ode-info@osf.org").
+
+The build script, build.sh, is located under ./src/setup/AT386.
+This script takes as arguments:
+
+    - the target machine (AT386)
+    - the target operating system (osf1, mach)
+    - the directory in which to invoke make
+    - the target for make to build
+
+(For instance, "build_all" builds all targets in the makefile; while a
+PASS builds only selective targets).  The "build.sh" script substitutes
+for the build command from the complete ODE environment.  You can use
+this script to compile any portion of the source tree by changing the
+third argument (i.e. the directory to cd to and build).
+
+The build.sh script is run from the top of the ./src tree. 
+For example, here is how build.sh is invoked (from csh) to export
+header files to the ./export/at386 subtree (exporting occurs
+during the FIRST pass):
+
+    sh -xf setup/AT386/build.sh AT386 osf1 . MAKEFILE_PASS=FIRST >& first.log
+
+NOTE: This source collection DOES NOT contain all necessary header files
+under ./src/osf1_server and ./src/usr/include that must be exported
+(via the FIRST pass above) prior to building libmach*, the bootstrap,
+the default pager, and the makeboot command.  These components cannot
+be compiled without additional header files.  However, if you have
+obtained a complete OSF/1 or MK distribution, then it is possible to
+overlay the mk6.1_free ./src tree and obtain a fully populated export
+tree (using the build.sh command shown above).
+
+
+For assistance with building we have included:
+---------------------------------------------
+
+(1) An example script that orders the invocations of build.sh (located
+    in ./src/setup/optional/onestep.csh).  The build process first
+    collects and exports header files for subsequent reference,
+    then build the libmach, libsa_mach, libcthreads libraries,
+    the bootstrap, the default pager, the makeboot command, and
+    finally the microkernel.
+
+(2) A script to create the bootable image, mach.boot, from a clean
+    build of libraries, the microkernel, and the makeboot command.
+    This script is located in ./src/setup/optional/makeboot.csh.
+
+(3) Copies of build logs containing the output from running the build.sh
+    script.  These files are located under ./logs/*.log

@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 1995, 1994, 1993, 1992, 1991, 1990  
+ * Open Software Foundation, Inc. 
+ *  
+ * Permission to use, copy, modify, and distribute this software and 
+ * its documentation for any purpose and without fee is hereby granted, 
+ * provided that the above copyright notice appears in all copies and 
+ * that both the copyright notice and this permission notice appear in 
+ * supporting documentation, and that the name of ("OSF") or Open Software 
+ * Foundation not be used in advertising or publicity pertaining to 
+ * distribution of the software without specific, written prior permission. 
+ *  
+ * OSF DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE 
+ * INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+ * FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL OSF BE LIABLE FOR ANY 
+ * SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES 
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN 
+ * ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, ARISING 
+ * OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE 
+ */
+/*
+ * OSF Research Institute MK6.1 (unencumbered) 1/31/1995
+ */
+
+/*
+ *	File:   netmem_msg_reply.defs
+ *	Author: David L. Black
+ *
+ *	Mig interface for reply messages from simple netmemory server
+ */
+
+subsystem netmem_msg_reply	417300;
+
+#include <mach/std_types.defs>
+#include <mach/mach_types.defs>
+
+type reply_port_t = MACH_MSG_TYPE_MOVE_SEND_ONCE
+        ctype: mach_port_t;
+
+/*
+ *	Reply routine to complete a read operation.  Return the
+ *	result of the operation and the value read.
+ */
+
+simpleroutine netmem_read_reply(
+		reply_port	: reply_port_t;
+		result 		: kern_return_t;
+		value		: int);
+
+/*
+ *	Reply routine to compete a write operation.
+ */
+
+simpleroutine netmem_write_reply(
+		reply_port	: reply_port_t;
+		result 		: kern_return_t);
