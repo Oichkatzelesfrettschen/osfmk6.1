@@ -1,0 +1,9 @@
+Licensing of this repository
+
+The OSF Mach 3.0 (osfmk 6.1) sources imported in the first commit remain under
+their original terms: the Open Software Foundation notice and the Carnegie
+Mellon University Mach notice reproduced in LICENSE, as stated in
+kernel/src/mach_kernel/conf/copyright and in each source file's header. Files
+added to this repository after that import, and changes to imported files, are
+offered under the MIT License in LICENSE-MIT, alongside the original notices,
+which every copy and derivative keeps.
